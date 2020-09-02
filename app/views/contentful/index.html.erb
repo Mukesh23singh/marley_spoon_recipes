@@ -1,0 +1,10 @@
+<% @recipes.each do |recipe| %>
+<div class="row" style="margin-bottom:50px">
+    <div class="col-sm-2 float-left"></div>
+    <div class="col-sm-8 float-left">
+        <h4>Recipe: <%= link_to recipe.title, contentful_path(recipe.id)%></h4>
+        <%= image_tag(recipe.image_url, :class => "rounded float-left") %>
+    </div>
+</div>
+
+<% end %>

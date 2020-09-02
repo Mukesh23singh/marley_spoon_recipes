@@ -1,0 +1,14 @@
+<div class="row" style="margin-bottom:50px">
+    <div class="col-sm-2 float-left"></div>
+    <div class="col-sm-8 float-left">
+        <h4>Recipe: <%= @recipe.title %></h4>
+        <%= image_tag(@recipe.image_url, :class => "rounded float-left") %>
+        <p style="margin-top:50px">Description: <%= @recipe.description%></p>
+        <% if !@recipe.tags.blank?%>
+        <p>Tags: <%= @recipe.tags%></p>
+        <% end %>
+        <% if !@recipe.chef.blank?%>
+        <p>Chef:<%= @recipe.chef%></p>
+        <% end %>
+    </div>
+</div>

@@ -1,0 +1,2 @@
+module ContentfulHelper
+end
