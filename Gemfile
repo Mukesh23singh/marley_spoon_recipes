@@ -25,6 +25,7 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'contentful'
 gem 'figaro'
 gem 'jquery-rails'
+gem 'pg'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
